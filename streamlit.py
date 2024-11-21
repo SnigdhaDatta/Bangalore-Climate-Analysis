@@ -24,8 +24,8 @@ st.write("## Dataset Preview:")
 st.write(data.head())
 
 # Plotting the data
-#st.write("## Data Visualization")
-#st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
+st.write("## Data Visualization")
+st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
 #x_column = "time"  # Replace with the desired X-axis column name
 #y_columns = ["tavg", "prcp"]  # Replace with the desired Y-axis column names
 
@@ -36,9 +36,9 @@ st.write(data.head())
     #st.plotly_chart(fig)
 #else:
     #st.error("Specified columns are not found in the dataset.")
-
-chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["tavg", "prcp", "time"])
+chart_data = pd.DataFrame(np.random.randn(20, 2), columns=["tavg", "prcp"])
 st.line_chart(chart_data)
+
 #our demo video heading
 st.markdown("## Demo Video")
 #out demo video
