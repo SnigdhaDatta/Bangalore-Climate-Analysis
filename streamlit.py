@@ -40,7 +40,7 @@ else:
 #our demo video heading
 st.markdown("## Demo Video")
 #out demo video
-st.video("VN20241121_002254.mp4")
+st.video("https://drive.google.com/file/d/1_DCvPG9VKHzOn6LItP-TtfNZUWDgMQqK/view?usp=sharing")
 
 st.markdown("## Presentation")
 st.write("Contains all the details about the project and  more data visualizations")
