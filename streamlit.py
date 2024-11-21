@@ -48,7 +48,7 @@ st.markdown("## Presentation")
 st.write("Contains all the details about the project and  more data visualizations")
 # Button that links to the ppt document
 if st.button("View Presentation"):
-    st.write("[Open Document](https://docs.google.com/document/d/1yDCw-DUBKg8wfRyBTDxUgJlwIf_Q1H5l/edit?usp=sharing&ouid=106051408725906265648&rtpof=true&sd=true)")
+    st.write("[Open Document](https://www.canva.com/design/DAGW1oz6WQo/IONhwBGbkWBi8rfPj_eVrQ/view?utm_content=DAGW1oz6WQo&utm_campaign=designshare&utm_medium=link&utm_source=editor )")
 
 
 #button that links to the project report
