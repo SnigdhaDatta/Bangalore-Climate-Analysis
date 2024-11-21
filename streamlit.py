@@ -37,6 +37,8 @@ st.write(data.head())
 #else:
     #st.error("Specified columns are not found in the dataset.")
 
+chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["tavg", "prcp", "time"])
+st.line_chart(chart_data)
 #our demo video heading
 st.markdown("## Demo Video")
 #out demo video
