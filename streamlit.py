@@ -32,8 +32,8 @@ st.write(data.head())
 # Ensure the columns exist in the dataset
 #if x_column in data.columns and all(col in data.columns for col in y_columns):
 # Plot the chart using Plotly
-    fig = px.line(data, x=x_column, y=y_columns, title="Line Chart Showing Average Temperature & Precipitation over the Years")
-    st.plotly_chart(fig)
+    #fig = px.line(data, x=x_column, y=y_columns, title="Line Chart Showing Average Temperature & Precipitation over the Years")
+    #st.plotly_chart(fig)
 #else:
     #st.error("Specified columns are not found in the dataset.")
 
