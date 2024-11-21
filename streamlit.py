@@ -1,6 +1,6 @@
 import streamlit as st 
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 import numpy as np
 import math
 import random
@@ -24,18 +24,18 @@ st.write("## Dataset Preview:")
 st.write(data.head())
 
 # Plotting the data
-st.write("## Data Visualization")
-st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
-x_column = "time"  # Replace with the desired X-axis column name
-y_columns = ["tavg", "prcp"]  # Replace with the desired Y-axis column names
+#st.write("## Data Visualization")
+#st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
+#x_column = "time"  # Replace with the desired X-axis column name
+#y_columns = ["tavg", "prcp"]  # Replace with the desired Y-axis column names
 
 # Ensure the columns exist in the dataset
-if x_column in data.columns and all(col in data.columns for col in y_columns):
+#if x_column in data.columns and all(col in data.columns for col in y_columns):
 # Plot the chart using Plotly
     fig = px.line(data, x=x_column, y=y_columns, title="Line Chart Showing Average Temperature & Precipitation over the Years")
     st.plotly_chart(fig)
-else:
-    st.error("Specified columns are not found in the dataset.")
+#else:
+    #st.error("Specified columns are not found in the dataset.")
 
 #our demo video heading
 st.markdown("## Demo Video")
