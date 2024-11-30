@@ -25,6 +25,10 @@ data = pd.read_csv("bangalore.csv")
 st.write("## Dataset Preview:")
 st.write(data.head())
 
+#vasuc statistics
+st.write("## Basic Statistics:")
+st.write(data.describe())
+
 # Plotting the data
 st.write("## Data Visualization")
 st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
