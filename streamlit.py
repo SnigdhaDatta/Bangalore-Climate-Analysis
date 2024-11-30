@@ -48,11 +48,11 @@ else:
     chart_data = data  # If less than 20 rows, use the whole dataset
 
 # Allow users to choose columns to visualize
-columns = st.multiselect("Select columns to plot", chart_data.columns)
+y_columns = st.multiselect("Select columns to plot on the Y-axis", df.columns.difference(['time']))
 
-# Visualize the selected columns
-if columns:
-    st.line_chart(chart_data[columns])
+# Plot the line chart
+if y_columns:
+    st.line_chart(df.set_index('time')[y_columns])
 else:
     st.write("Please select at least one column to display the line chart.")
 
