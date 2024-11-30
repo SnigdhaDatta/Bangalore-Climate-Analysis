@@ -52,7 +52,7 @@ y_columns = st.multiselect("Select columns to plot on the Y-axis", df.columns.di
 
 # Plot the line chart
 if y_columns:
-    st.line_chart(df.set_index('time')[y_columns])
+    st.line_chart(data.set_index('time')[y_columns])
 else:
     st.write("Please select at least one column to display the line chart.")
 
