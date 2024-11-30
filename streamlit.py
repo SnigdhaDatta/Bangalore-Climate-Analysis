@@ -23,7 +23,7 @@ st.write("We’re analyzing Bangalore’s climate change because it’s a rapidl
 data = pd.read_csv("bangalore.csv")
 #dataset preview
 st.write("## Dataset Preview:")
-st.write(data.head())
+st.dataframe(data)
 
 #vasuc statistics
 st.write("## Basic Statistics:")
