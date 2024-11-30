@@ -42,8 +42,20 @@ st.write("This is only one sample of the analysis we produced. More viasulizatio
     #st.plotly_chart(fig)
 #else:
     #st.error("Specified columns are not found in the dataset.")
-chart_data = pd.DataFrame(np.random.randn(20, 4), columns=["tavg", "prcp", "tmin", "tmax"])
-st.line_chart(chart_data)
+if len(data) >= 20:
+    chart_data = data.head(20)  # Get the first 20 rows
+else:
+    chart_data = data  # If less than 20 rows, use the whole dataset
+
+# Allow users to choose columns to visualize
+columns = st.multiselect("Select columns to plot", chart_data.columns)
+
+# Visualize the selected columns
+if columns:
+    st.line_chart(chart_data[columns])
+else:
+    st.write("Please select at least one column to display the line chart.")
+
 
 #our demo video heading
 st.markdown("## Demo Video")
