@@ -42,13 +42,8 @@ st.write("This is only one sample of the analysis we produced. More viasulizatio
     #st.plotly_chart(fig)
 #else:
     #st.error("Specified columns are not found in the dataset.")
-chart_data = pd.DataFrame(np.random.randn(20, 2), columns=["tavg", "prcp"])
+chart_data = pd.DataFrame(np.random.randn(20, 4), columns=["tavg", "prcp", "tmin", "tmax"])
 st.line_chart(chart_data)
-
-st.subheader("Line Chart")
-if not df.empty:
-    st.line_chart(data["tavg", "prcp", "tmin", "tmax"])
-
 
 #our demo video heading
 st.markdown("## Demo Video")
