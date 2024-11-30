@@ -23,18 +23,17 @@ st.write("We’re analyzing Bangalore’s climate change because it’s a rapidl
 data = pd.read_csv("bangalore.csv")
 #dataset preview
 st.write("## Dataset Preview:")
-st.dataframe(data)
+st.write("Here's a quick look at the first 5 rows of the dataset:")
+st.dataframe(data.head()) # Display the first 5 rows of the dataset
 
 #basic  statistics
 st.write("## Basic Statistics:")
+st.write("Provides statistical summaries (e.g., mean, min, max) for numerical columns.")
 st.write(data.describe())
-
-st.write("## Basic Information:")
-st.write(data.info())  # Show basic info about the dataset
 
 # Plotting the data
 st.write("## Data Visualization")
-st.write("This is only one sample of the analysis we produced. More viasulizations are present in the ppt or you can also see in the demo video")
+st.write(" Here's a Customizable Line chart whwere you can visualize the data by selecting one or multiple columns to analyze trends.")
 #x_column = "time"  # Replace with the desired X-axis column name
 #y_columns = ["tavg", "prcp"]  # Replace with the desired Y-axis column names
 
@@ -85,7 +84,8 @@ st.markdown("## Conclusion:")
 st.write("###### Based on the collective set of graphs and analysis provided:")
 st.write("1)Temperature patterns are relatively stable and predictable over time, showing consistent seasonal cycles.")
 st.write("2)Past temperature data can reliably forecast future temperatures.")
-st.write("3)Precipitation patterns are much more irregular and variable, with high uncertainty in forecasting rainfall beyond the immediate timeframe. \n4)Past rainfall is not a strong predictor of future precipitation.")
+st.write("3)Precipitation patterns are much more irregular and variable, with high uncertainty in forecasting rainfall beyond the immediate timeframe.")
+st.write("4)Past rainfall is not a strong predictor of future precipitation.")
 st.write("5)The temperature distribution histogram indicates most days fall within a moderate temperature range around 24°C, with fewer instances of extremely hot or cold temperatures.")
 st.write("6)The autocorrelation analysis further confirms the contrast - temperature has a strong, persistent relationship over time, while precipitation exhibits a weaker relationship beyond the short-term.")
 st.write("###### In summary, the data suggests that while temperature follows a predictable cyclical pattern, precipitation has become increasingly unpredictable and less correlated with past weather trends. This points to a climate system where temperature variability is relatively stable, but rainfall patterns are becoming more erratic and difficult to forecast accurately.")
