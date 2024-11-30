@@ -45,6 +45,11 @@ st.write("This is only one sample of the analysis we produced. More viasulizatio
 chart_data = pd.DataFrame(np.random.randn(20, 2), columns=["tavg", "prcp"])
 st.line_chart(chart_data)
 
+st.subheader("Line Chart")
+if not df.empty:
+    st.line_chart(data["tavg", "prcp", "tmin", "tmax"])
+
+
 #our demo video heading
 st.markdown("## Demo Video")
 #out demo video
