@@ -25,9 +25,12 @@ data = pd.read_csv("bangalore.csv")
 st.write("## Dataset Preview:")
 st.dataframe(data)
 
-#vasuc statistics
+#basic  statistics
 st.write("## Basic Statistics:")
 st.write(data.describe())
+
+st.write("## Basic Information:")
+st.write(data.info())  # Show basic info about the dataset
 
 # Plotting the data
 st.write("## Data Visualization")
