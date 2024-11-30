@@ -33,7 +33,7 @@ st.write(data.describe())
 
 # Plotting the data
 st.write("## Data Visualization")
-st.write(" Here's a Customizable Line chart whwere you can visualize the data by selecting one or multiple columns to analyze trends.")
+st.write(" Here's a Customizable Line chart where you can visualize the data by selecting one or multiple columns to analyze trends. For more detailed visualizations please view our project presentation and demo video.")
 #x_column = "time"  # Replace with the desired X-axis column name
 #y_columns = ["tavg", "prcp"]  # Replace with the desired Y-axis column names
 
