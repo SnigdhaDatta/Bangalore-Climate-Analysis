@@ -1,9 +1,12 @@
 import streamlit as st 
 import pandas as pd
+import altair as alt
+import plotly.express as px
 #import plotly.express as px
 import numpy as np
 import math
 import random
+alt.themes.enable("dark")
 #used to add the title of an app
 st.title("Study of Weather Data of Bangalore using Exploratory Data Analysis")
 #header 
